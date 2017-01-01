@@ -1,7 +1,7 @@
 from jinja2 import FileSystemLoader, Environment
 
 
-def select_template(template='basic'):
+def select_template(template):
     """
     Função que seleciona o tamplate HTML que vai ser usado
     """
