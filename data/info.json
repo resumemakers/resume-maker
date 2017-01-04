@@ -1,36 +1,32 @@
 {
-    "name": "Jorge o marciano",
-    "function": "Analísta sênior de youtube",
-    "telephone": "+55 287298121",
-    "email": "ushasuhauh@ushausa.com",
-    "address": "R. dos bobos, 0 - Acre",
-    "graduation": [
+    "name": "Name",
+    "function": "Function",
+    "phone": "Phone",
+    "email": "mail@mail.com",
+    "address": "address",
+    "education": [
         ["Course - School",
-         "Date"],
+         "Year"],
 
         ["Course - School",
-         "Date"]
+         "Year"]
 
     ],
-    "jobs": [
-        ["Local",
-         "Data",
-         "Atividades"],
+    "experience": [
+        ["Place",
+         "Time",
+         "Activities"],
 
-        ["Local",
-         "Data",
-         "Atividades"]
+        ["Place",
+         "Time",
+         "Activities"]
 
     ],
     "skills": [
-        ["Python", 1],
-        ["Java", 5],
-        ["C++", 4]
+        ["Python", 5]
         ],
 
     "languages": [
-        ["Português", 100],
-        ["Inglês", 35],
-        ["Fancês", 10]
+        ["english", 100]
         ]
 }

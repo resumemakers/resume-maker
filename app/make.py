@@ -1,6 +1,6 @@
 from weasyprint import HTML
 from mount_template import select_template
-from auxiliar import read_json, templates
+from auxiliar import read_json, templates, mount_i18n
 import click
 
 
@@ -21,13 +21,16 @@ def list():
 
 
 @main.command(help='Create a resume')
+@click.argument('lang', default='en')
 @click.argument('template', default='basic')
-@click.argument('output', default='resume')
 @click.argument('file', default='../data/info.json')
-def create(template, file, output):
+@click.argument('output', default='resume')
+def create(lang, template, file, output):
     template_vars = read_json(file)
+    template_vars.update(mount_i18n(lang))
 
     template = select_template(template)
+
     build = template.render(template_vars)
 
     HTML(string=build).write_pdf("{}.pdf".format(output))

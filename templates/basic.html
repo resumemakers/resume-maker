@@ -6,29 +6,29 @@
     <body>
         <h1>{{name}}</h1>
         <h3>{{function}}</h3>
-        {{telephone}}<br>
+        {{phone}}<br>
         {{email}}<br>
         {{address}}<br>
-        <h4>Graduation</h4>
-        {% for g in graduation %}
+        <h4>{{key_6}}</h4>
+        {% for g in education %}
             {{g[0]}}<br>
             {{g[1]}}<br>
             <br>
         {% endfor %}
-        <h4>Jobs</h4>
-        {% for j in jobs %}
+        <h4>{{key_7}}</h4>
+        {% for j in experience %}
             {{j[0]}}<br>
             {{j[1]}}<br>
             {{j[2]}}<br>
         <br>
         {% endfor %}
-        <h4>Skills</h4>
+        <h4>{{key_8}}</h4>
         {% for x,y in skills %}
             {{x}}: {{y}} <br>
         {% endfor %}
-        <h4>Languages</h4>
+        <h4>{{key_9}}</h4>
         {% for x,y in languages %}
-            {{x}}: {{y}}% <br>
+            {{x}}: {{y}} <br>
         {% endfor %}
     </body>
 </html>
