@@ -17,9 +17,7 @@ make.py <command>
 
 #### how to use create?
 ```
-cd app
-
-make.py create <lang> <template> <data_json> <output_path>
+resume-maker make <lang> <template> <data_json> <output_path>
 ```
 
 #### langs
