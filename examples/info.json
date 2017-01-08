@@ -4,6 +4,8 @@
     "phone": "+55 287298121",
     "email": "George@martian.com",
     "address": "73 N. Oak Drive - Dyersburg, TN 38024",
+    "portifolio": "github.com/g_martian",
+
     "education": [
         ["PhD in the streets - Harvard",
          "2001"],
@@ -12,6 +14,7 @@
          "every year"]
 
     ],
+
     "experience": [
         ["Scroll Master",
          "Mai 2003 - Jun 2007",
@@ -22,6 +25,7 @@
          "Collecting garbage in other codes"]
 
     ],
+
     "skills": [
         ["Python", 5],
         ["Java", 2],
