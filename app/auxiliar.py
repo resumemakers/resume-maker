@@ -55,16 +55,26 @@ templates = {'basic': 'A very basic resume',
              'red': 'A red template - by:magnvmOpvs'}
 
 
-def read_json(file):
+def read_json(json_file):
     """
     Função que seleciona o arquivo json a ser lido
+
+    :args:
+        - json_file: Arquivo json com as informações para o resume
+
+    :return: um dicionario com as informações do json
     """
-    with open(file) as _file:
+    with open(json_file) as _file:
         return loads(_file.read())
 
 
 def mount_i18n(lang: str) -> dict:
     """
     Monta as chaves no jinja para o idioma escolhido
+
+    :args:
+        - lang: Linguagem selecionada
+
+    :return: Um dicionario monstado com a lingua escolida
     """
     return {e: langs[lang][keys[e]] for e in keys}
