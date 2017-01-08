@@ -22,7 +22,7 @@ langs = \
             'experience': 'Experience',
             'skills': 'Skills',
             'languages': 'Languages',
-            'contact': 'contact'},
+            'contact': 'Contact'},
 
      'pt': {'name': 'Nome',
             'function': 'Cargo',
