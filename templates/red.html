@@ -30,32 +30,38 @@
 
         <div class="addr">
           <h3 class="slabo" style="text-align: left;">
-            {{key_5}}
+            {{k_address}}
           </h3>
             <p class="slabo" style="text-align: left;">
               {{address}}
             </p>
             <h3 class="slabo" style="text-align: left;">
-              {{key_10}}
+              {{k_contact}}
             </h3>
             <p class="slabo" style="text-align: left;">
               <b>
-                {{key_3}}:
+                {{k_phone}}:
               </b>
               {{phone}}
             </p>
             <p class="slabo" style="text-align: left;">
               <b>
-                {{key_4}}:
+                {{k_email}}:
               </b>
               {{email}}
+            </p>
+            <p class="slabo" style="text-align: left;">
+              <b>
+                {{k_portifolio}}:
+              </b>
+              {{portifolio}}
             </p>
         </div>
 
         <div class="info">
 
           <h3 class="slabo verticalLine horizontalLine">
-            {{key_6}}
+            {{k_education}}
           </h3>
 
           {% for g in education %}
@@ -72,7 +78,7 @@
           {% endfor %}
 
 
-          <h3 class="slabo verticalLine horizontalLine">{{key_7}}</h3>
+          <h3 class="slabo verticalLine horizontalLine">{{k_experience}}</h3>
           {% for j in experience %}
           <i class="fa fa-caret-right"></i>
           <h4 class="slabo" style="display: inline;">
@@ -88,7 +94,7 @@
           {% endfor %}
 
 
-          <h3 class="slabo verticalLine horizontalLine">{{key_8}}</h3>
+          <h3 class="slabo verticalLine horizontalLine">{{k_skills}}</h3>
           {% for x, y in skills %}
           <h4 class="slabo" style="display: inline;">
             <i class="fa fa-caret-right"></i>
@@ -105,7 +111,7 @@
           {% endfor %}
 
 
-          <h3 class="slabo verticalLine horizontalLine">{{key_9}}</h3>
+          <h3 class="slabo verticalLine horizontalLine">{{k_languages}}</h3>
           {% for x,y in languages %}
           <h4 class="slabo" style="display: inline;">
             <i class="fa fa-caret-right"></i>

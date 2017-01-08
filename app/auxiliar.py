@@ -1,15 +1,16 @@
 from json import loads
 
-keys = {'key_1': 'name',
-        'key_2': 'function',
-        'key_3': 'phone',
-        'key_4': 'email',
-        'key_5': 'address',
-        'key_6': 'education',
-        'key_7': 'experience',
-        'key_8': 'skills',
-        'key_9': 'languages',
-        'key_10': 'contact'
+keys = {'k_name': 'name',
+        'k_function': 'function',
+        'k_phone': 'phone',
+        'k_email': 'email',
+        'k_address': 'address',
+        'k_education': 'education',
+        'k_experience': 'experience',
+        'k_skills': 'skills',
+        'k_languages': 'languages',
+        'k_contact': 'contact',
+        'k_portifolio': 'portifolio'
         }
 
 langs = \
@@ -22,7 +23,8 @@ langs = \
             'experience': 'Experience',
             'skills': 'Skills',
             'languages': 'Languages',
-            'contact': 'Contact'},
+            'contact': 'Contact',
+            'portifolio': 'Portifolio'},
 
      'pt': {'name': 'Nome',
             'function': 'Cargo',
@@ -33,7 +35,8 @@ langs = \
             'experience': 'Experiência',
             'skills': 'Habilidades',
             'languages': 'Línguas',
-            'contact': 'Contato'},
+            'contact': 'Contato',
+            'portifolio': 'Portifólio'},
 
      'es': {'name': 'Nombre',
             'function': 'Cargo',
@@ -44,7 +47,8 @@ langs = \
             'experience': 'Experiencia',
             'skills': 'Habildades',
             'languages': 'Idiomas',
-            'contact': 'Contacto'}
+            'contact': 'Contacto',
+            'portifolio': 'Portifolio'}
      }
 
 templates = {'basic': 'A very basic resume',
