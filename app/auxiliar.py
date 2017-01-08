@@ -10,7 +10,7 @@ keys = {'k_name': 'name',
         'k_skills': 'skills',
         'k_languages': 'languages',
         'k_contact': 'contact',
-        'k_portifolio': 'portifolio'
+        'k_portfolio': 'portfolio'
         }
 
 langs = \
@@ -24,7 +24,7 @@ langs = \
             'skills': 'Skills',
             'languages': 'Languages',
             'contact': 'Contact',
-            'portifolio': 'Portifolio'},
+            'portfolio': 'Portfolio'},
 
      'pt': {'name': 'Nome',
             'function': 'Cargo',
@@ -36,7 +36,7 @@ langs = \
             'skills': 'Habilidades',
             'languages': 'Línguas',
             'contact': 'Contato',
-            'portifolio': 'Portifólio'},
+            'portfolio': 'Portfólio'},
 
      'es': {'name': 'Nombre',
             'function': 'Cargo',
@@ -48,7 +48,7 @@ langs = \
             'skills': 'Habildades',
             'languages': 'Idiomas',
             'contact': 'Contacto',
-            'portifolio': 'Portifolio'}
+            'portfolio': 'Portfolio'}
      }
 
 templates = {'basic': 'A very basic resume',
