@@ -31,7 +31,7 @@ langs = \
             'address': 'Endereço',
             'education': 'Escolaridade',
             'experience': 'Experiência',
-            'skills': 'Habildades',
+            'skills': 'Habilidades',
             'languages': 'Línguas',
             'contact': 'Contato'},
 
