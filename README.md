@@ -33,4 +33,4 @@ es = spanish
 #### templates
 [basic](examples/basic.pdf) - A very basic resume
 
-[red](examples/red.pdf) - A red resume
+[red](examples/red.pdf) - A red resume - by:magnvmOpvs
