@@ -33,7 +33,7 @@ def create(lang, template, file, output):
 
     build = template.render(template_vars)
 
-    HTML(string=build).write_pdf("{}.pdf".format(output))
+    HTML(string=build, encoding='utf-8').write_pdf("{}.pdf".format(output))
 
 
 if __name__ == '__main__':

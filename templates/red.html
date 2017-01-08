@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title></title>
+
+    <!-- Bootstrap-->
+    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css"> -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Slabo+27px" rel="stylesheet">
+
+    <style tyle="text/css">
+
+      .slabo {
+        font-family: 'Slabo 27px', serif;
+      }
+
+      .nameHeader {
+        text-align: center;
+        margin-bottom: 5px;
+        border-style: dotted;
+        border-color: #C25B56;
+      }
+
+      .name {
+        font-size: 70px;
+        margin: 0px;
+        padding: 0px;
+      }
+
+      .func {
+        font-size: 20px;
+        display: inline;
+      }
+
+      .fa-circle {
+        display: inline;
+        color: #C25B56;
+      }
+
+      .info {
+        margin: 30px;
+        display: inline;
+        text-align: center;
+      }
+
+      .addr {
+        text-align: center;
+        padding: 20px;
+        float: right;
+        border-style: double;
+        border-color: #C25B56;
+        margin-top: 20px;
+      }
+
+      .verticalLine {
+        border-left: thick solid #C25B56;
+      }
+
+      .horizontalLine {
+        border-bottom: thick solid #C25B56;
+        margin: 5px;
+        width: 50%;
+      }
+
+      .fa-caret-right {
+        color: #C25B56;
+      }
+
+    </style>
+
+  </head>
+<body>
+    <div class="container">
+
+      <div class="nameHeader">
+
+        <p class="slabo name">
+          {{name}}
+        </p>
+          <i class="fa fa-circle" aria-hidden="true"></i>
+          <p class="slabo func">
+            {{function}}
+          </p>
+          <i class="fa fa-circle" aria-hidden="true"></i>
+
+      </div>
+
+
+        <div class="addr">
+          <h3 class="slabo" style="text-align: left;">
+            {{key_5}}
+          </h3>
+            <p class="slabo" style="text-align: left;">
+              {{address}}
+            </p>
+            <h3 class="slabo" style="text-align: left;">
+              {{key_10}}
+            </h3>
+            <p class="slabo" style="text-align: left;">
+              <b>
+                {{key_3}}:
+              </b>
+              {{phone}}
+            </p>
+            <p class="slabo" style="text-align: left;">
+              <b>
+                {{key_4}}:
+              </b>
+              {{email}}
+            </p>
+        </div>
+
+        <div class="info">
+
+          <h3 class="slabo verticalLine horizontalLine">
+            {{key_6}}
+          </h3>
+
+          {% for g in education %}
+
+          <i class="fa fa-caret-right"></i>
+          <h4 class="slabo" style="display: inline;">
+            {{g[0]}}</br>
+          </h4>
+
+          <p class="slabo" style="font-size: 15px; display: inline;">
+            {{g[1]}}</br>
+          </p>
+          <br>
+          {% endfor %}
+
+
+          <h3 class="slabo verticalLine horizontalLine">{{key_7}}</h3>
+          {% for j in experience %}
+          <i class="fa fa-caret-right"></i>
+          <h4 class="slabo" style="display: inline;">
+            {{j[0]}}<br>
+          </h4>
+          <p class="slabo" style="font-size: 15px; display: inline;">
+            {{j[1]}}<br>
+          </p>
+          <p class="slabo" style="display: inline; padding-left: 20px;">
+            {{j[2]}}<br>
+          </p>
+          <br>
+          {% endfor %}
+
+
+          <h3 class="slabo verticalLine horizontalLine">{{key_8}}</h3>
+          {% for x, y in skills %}
+          <h4 class="slabo" style="display: inline;">
+            <i class="fa fa-caret-right"></i>
+            <p class="slabo" style="display: inline;">
+              {{x}}:
+            </p>
+          </h4>
+          <div align="middle" style="text-align: left;">
+
+          {% for b in range(0, y)%}
+            <i class="fa fa-circle" style="display: inline;"></i>
+          {% endfor %}
+        </div>
+          {% endfor %}
+
+
+          <h3 class="slabo verticalLine horizontalLine">{{key_9}}</h3>
+          {% for x,y in languages %}
+          <h4 class="slabo" style="display: inline;">
+            <i class="fa fa-caret-right"></i>
+            <p class="slabo" style="display: inline;">
+              {{x}}:
+            </p>
+          </h4>
+          {{y}} <br>
+          {% endfor %}
+
+      </div>
+
+    </div>
+  </body>
+</html>

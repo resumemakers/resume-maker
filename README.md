@@ -15,7 +15,7 @@ make.py <command>
   list - List templates
 
 
-#### how use create?
+#### how to use create?
 ```
 cd app
 
@@ -31,4 +31,6 @@ es = spanish
 
 
 #### templates
-[basic](examples/basic.pdf) - A very simple resume
+[basic](examples/basic.pdf) - A very basic resume
+
+[red](examples/red.pdf) - A red resume

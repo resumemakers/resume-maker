@@ -1,7 +1,7 @@
 {
     "name": "George the Martian",
     "function": "Youtube senior analyst",
-    "telephone": "+55 287298121",
+    "phone": "+55 287298121",
     "email": "George@martian.com",
     "address": "73 N. Oak Drive - Dyersburg, TN 38024",
     "education": [
@@ -26,7 +26,7 @@
         ["Python", 5],
         ["Java", 2],
         ["C++", 4],
-        ["JS", 0]
+        ["JS", 1]
         ],
 
     "languages": [

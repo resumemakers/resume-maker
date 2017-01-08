@@ -8,7 +8,8 @@ keys = {'key_1': 'name',
         'key_6': 'education',
         'key_7': 'experience',
         'key_8': 'skills',
-        'key_9': 'languages'
+        'key_9': 'languages',
+        'key_10': 'contact'
         }
 
 langs = \
@@ -20,7 +21,8 @@ langs = \
             'education': 'Education',
             'experience': 'Experience',
             'skills': 'Skills',
-            'languages': 'Languages'},
+            'languages': 'Languages',
+            'contact': 'contact'},
 
      'pt': {'name': 'Nome',
             'function': 'Cargo',
@@ -30,7 +32,8 @@ langs = \
             'education': 'Escolaridade',
             'experience': 'Experiência',
             'skills': 'Habildades',
-            'languages': 'Línguas'},
+            'languages': 'Línguas',
+            'contact': 'Contato'},
 
      'es': {'name': 'Nombre',
             'function': 'Cargo',
@@ -40,10 +43,12 @@ langs = \
             'education': 'Educacíon',
             'experience': 'Experiencia',
             'skills': 'Habildades',
-            'languages': 'Idiomas'}
+            'languages': 'Idiomas',
+            'contact': 'Contacto'}
      }
 
-templates = {'basic': 'A very simple resume'}
+templates = {'basic': 'A very basic resume',
+             'red': 'A red template - by:magnvmOpvs'}
 
 
 def read_json(file):
