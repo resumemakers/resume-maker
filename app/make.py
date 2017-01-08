@@ -1,5 +1,4 @@
 from weasyprint import HTML
-from pdfkit import from_string
 from app.mount_template import select_template
 from app.auxiliar import read_json, templates, mount_i18n
 
@@ -23,4 +22,4 @@ def create(lang, template, json_file, output):
 
     build = template.render(template_vars)
 
-    from_string(build, 'teste.pdf')
+    HTML(string=build, encoding='utf-8').write_pdf("{}.pdf".format(output))
