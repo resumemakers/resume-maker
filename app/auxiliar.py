@@ -52,7 +52,8 @@ langs = \
      }
 
 templates = {'basic': 'A very basic resume',
-             'red': 'A red template - by:magnvmOpvs'}
+             'red': 'A red template - by:magnvmOpvs',
+             'Simple': 'A simple template - by:magnvmOpvs'}
 
 
 def read_json(json_file):

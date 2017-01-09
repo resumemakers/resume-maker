@@ -32,3 +32,5 @@ es = spanish
 [basic](examples/basic.pdf) - A very basic resume
 
 [red](examples/red.pdf) - A red resume - by:magnvmOpvs
+
+[simple](examples/simple.pdf) - A simple template - by:magnvmOpvs
