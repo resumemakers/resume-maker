@@ -1,1 +1,1 @@
-tests/*.features linguist-language=Python
+tests/*.feature linguist-language=Python
