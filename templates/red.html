@@ -96,37 +96,60 @@
           <br>
           {% endfor %}
 
+          <table style="float: left;">
+            <tr>
+              <td colspan="4">
+                <h3 class="slabo verticalLine horizontalLine" style="width: 100%;">
+                  {{k_skills}}
+                </h3>
+              </td>
+            </tr>
 
-          <h3 class="slabo verticalLine horizontalLine">{{k_skills}}</h3>
-          {% for x, y in skills %}
-          <h4 class="slabo" style="display: inline;">
-            <i class="fa fa-caret-right"></i>
-            <p class="slabo" style="display: inline;">
-              {{x}}:
-            </p>
-          </h4>
-          <div align="middle" style="text-align: left;">
+            {% for x, y in skills %}
+            <tr>
+              <td colspan="2">
+                <h4 class="slabo" style="padding: 0px; margin: 0px; text-align: left;">
+                  <i class="fa fa-caret-right" style="text-align: left;"></i>
+                  {{x}}:
+                </h4>
+              </td>
 
-          {% for b in range(0, y)%}
-            <i class="fa fa-circle" style="display: inline;"></i>
-          {% endfor %}
-          {% for b in range(y, 5)%}
-            <i class="fa fa-circle" style="display: inline; color:gray;"></i>
-          {% endfor %}
-        </div>
-          {% endfor %}
+              <td colspan="2">
+                {% for b in range(0, y) %}
+                <i class="fa fa-circle" style="display: inline-block"></i>
+                {% endfor %}
+                {% for b in range(y, 5) %}
+                <i class="fa fa-circle" style="display: inline-block; color: #c4c4c4;"></i>
+                {% endfor %}
+              </td>
+           {% endfor %}
+           </tr>
+          </table>
 
-
-          <h3 class="slabo verticalLine horizontalLine">{{k_languages}}</h3>
-          {% for x,y in languages %}
-          <h4 class="slabo" style="display: inline;">
-            <i class="fa fa-caret-right"></i>
-            <p class="slabo" style="display: inline;">
-              {{x}}:
-            </p>
-          </h4>
-          {{y}} <br>
-          {% endfor %}
+          <table style="display: inline-block; padding-left: 80px;">
+            <tr>
+              <td colspan="4">
+                <h3 class="slabo verticalLine horizontalLine" style="width: 100%;">
+                  {{k_languages}}
+                </h3>
+              </td>
+            </tr>
+            {% for x, y in languages %}
+            <tr>
+              <td colspan="2">
+                <h4 class="slabo" style="padding: 0px; margin: 0px; text-align: left;">
+                  <i class="fa fa-caret-right" style="text-align: left;"></i>
+                  {{x}}:
+                </h4>
+              </td>
+              <td colspan="2">
+                <p class="slabo" style="display: inline; padding: 0px; margin-top: 10px;">
+                  {{y}}
+                </p>
+              </td>
+              {% endfor %}
+            </tr>
+          </table>
 
       </div>
 

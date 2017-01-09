@@ -1,6 +1,6 @@
   @page {
       size: A4;
-      margin: 1cm; 
+      margin: 1cm;
   }
 
   .slabo {
@@ -47,7 +47,7 @@
   .horizontalLine {
     border-bottom: thick solid #C25B56;
     margin: 5px;
-    width: 50%;
+    width: 44%;
   }
 
   .fa-caret-right {
@@ -56,4 +56,9 @@
 
   .fa-circle{
       color: #C25B56;
+  }
+
+  table, tr, td, th {
+    padding: 0px;
+    margin: 0px;
   }

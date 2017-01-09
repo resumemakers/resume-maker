@@ -1,0 +1,60 @@
+@page {
+    size: A4;
+    margin: 0cm;
+    margin-top: 0cm;
+  }
+
+.josefin {
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 18px;
+  font-style: normal;
+  color: #000000;
+}
+
+.bitter {
+  font-family: 'Bitter', serif;
+  color: #273058;
+}
+
+table, th, td, tr {
+  padding: 5px;
+  margin: 0px;
+  height: auto;
+  border-collapse: collapse;
+}
+
+.bg {
+  background: #62d3d6;
+}
+
+body {
+  padding-top: 0px;
+  padding-left: 0px;
+  padding-right: 0px;
+  margin: 0px;
+  border: 0px;
+}
+
+.info {
+  padding-right: 15px;
+  text-align: right;
+}
+
+.cont {
+  padding-left: 20px;
+}
+
+.hori {
+  border-top: solid 1px;
+  color: #50638b;
+}
+
+.hl {
+  border-bottom: solid 1px;
+  color: #50638b;
+}
+
+h3, h4, p {
+  padding: 5px;
+  margin: 5px;
+}

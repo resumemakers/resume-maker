@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+  </head>
+
+  <body>
+
+    <table style="width: 100%;">
+      <tr>
+        <td class="bg" colspan="1">
+        </td>
+        <td style="text-align: right;" colspan="5">
+          <p class="josefin">
+            <span class="bitter">
+              {{k_contact}}:
+            </span>
+            {{phone}} | {{email}}
+            <br />
+            {{address}}
+            <br />
+            {{portfolio}}
+          </p>
+        </td>
+        </tr>
+        <tr>
+          <td class="bg" colspan="1">
+          </td>
+          <td colspan="6" style="text-align: center; font-size: 25px;">
+            <h1 class="bitter">
+              {{name}}
+            </h1>
+            <p class="josefin" style="font-size: 25px;">
+              {{function}}
+            </p>
+          </td>
+        </tr>
+      <tr class="hl">
+        <td class="bg info" colspan="1">
+          <h2 class="bitter">
+            {{k_experience}}
+          </h2>
+        </td>
+        </tr>
+        {% for j in experience %}
+        <tr>
+          <td class="bg info" colspan="1">
+            <p class="josefin info">
+              {{j[1]}}
+            </p>
+          </td>
+          <td colspan="6">
+            <h4 class="bitter cont">
+              {{j[0]}}
+            </h4>
+            <p class="josefin cont">
+              <span style="color: #50628b;">+</span>
+              {{j[2]}}
+            </p>
+          </td>
+        </tr>
+        {% endfor %}
+        <tr class="hl">
+          <td class="bg" colspan="1">
+            <h2 class="bitter info">
+              {{k_education}}
+            </h2>
+          </td>
+          </tr>
+          {% for g in education %}
+          <tr>
+            <td class="bg" colspan="1">
+              <p class="josefin info">
+                {{g[1]}}
+              </p>
+            </td>
+            <td colspan="6">
+              <h4 class="bitter cont">
+                {{g[0]}}
+              </h4>
+              <p class="josefin cont">
+                <span style="color: #50628b;">
+                  +
+                </span>
+                {{g[2]}}
+              </p>
+            </td>
+          </tr>
+         {% endfor %}
+         <tr class="hori">
+           <td class="bg" colspan="1">
+             <h2 class="bitter info">
+               {{k_skills}}
+             </h2>
+           </td>
+           <td colspan="1" style="padding-top: 0px; margin: 0px;">
+             {% for x, y in skills %}
+             <h4 class="bitter cont" style="text-align: right; padding: 0px; margin: 3px;">
+               {{x}}
+             </h4>
+             {% endfor %}
+           </td>
+           <td colspan="5">
+             {% for x, y in skills %}
+               {% for b in range(0, y)%}
+                 <i class="fa fa-circle" style="display: inline-block; margin-top: 8px;"></i>
+               {% endfor %}
+               {% for b in range(y, 5)%}
+                 <i class="fa fa-circle" style="display: inline-block; color:#c4c4c4; "></i>
+               {% endfor %}
+             <br />
+             {% endfor %}
+             &nbsp;
+           </td>
+         </tr>
+         <tr class="hori">
+           <td class="bg" colspan="1">
+             <h2 class="bitter info">
+               {{k_languages}}
+             </h2>
+           </td>
+           <td colspan="1">
+             {% for x, y in languages %}
+             <h4 class="bitter cont" style="text-align: right; padding: 0px; margin: 0px;">
+               {{x}}
+             </h4>
+             {% endfor %}
+           </td>
+             <td colspan="5">
+               {% for x, y in languages %}
+               <p class="josefin cont" style="text-align: left; padding: 2px; margin: 0px;">
+                 {{y}}
+               </p>
+               {% endfor %}
+             </td>
+         </tr>
+     </table>
+  </body>
+</html>

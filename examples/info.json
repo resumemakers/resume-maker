@@ -32,11 +32,16 @@
         ["Python", 5],
         ["Java", 2],
         ["C++", 4],
-        ["JS", 1]
+        ["JS", 1],
+        ["CSS", 2],
+        ["HTML", 1],
+        ["Cooking", 3]
         ],
 
     "languages": [
         ["Elvish", "Fluent"],
-        ["English", "Basic"]
+        ["English", "Basic"],
+        ["Pirate English", "Native"],
+        ["Lusitanian", "Fluent"]
         ]
 }
