@@ -1,5 +1,4 @@
-from app.make import create
-from app.auxiliar import templates
+from app.make import create, templates
 import click
 
 

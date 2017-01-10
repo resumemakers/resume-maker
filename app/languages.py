@@ -31,7 +31,7 @@ langs = \
             'phone': 'Telefone',
             'email': 'E-mail',
             'address': 'Endereço',
-            'education': 'Escolaridade',
+            'education': 'Formação',
             'experience': 'Experiência',
             'skills': 'Habilidades',
             'languages': 'Línguas',
@@ -50,10 +50,6 @@ langs = \
             'contact': 'Contacto',
             'portfolio': 'Portfolio'}
      }
-
-templates = {'basic': 'A very basic resume',
-             'red': 'A red template - by:magnvmOpvs',
-             'Simple': 'A simple template - by:magnvmOpvs'}
 
 
 def read_json(json_file):

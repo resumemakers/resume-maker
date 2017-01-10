@@ -1,9 +1,46 @@
 @page {
     size: A4;
-    margin: 2cm;
-    margin-top: 3cm;
+    margin-top: 1cm;
 }
 
 h4 {
   margin-bottom: 0px;
+}
+
+.grid {
+	float: left;
+	position: relative;
+	margin-left: 1%;
+	margin-right: 1%;
+}
+
+
+.skills .barres li {
+    margin-bottom: 21px;
+    position: relative;
+}
+
+.skills .barres li:after {
+    background: #e1e1e1;
+    content: ' ';
+    display: block;
+    height: 5px;
+    position: absolute;
+    width:100%;
+}
+
+.skills .barres li span {
+    background: black;
+    content: ' ';
+    display: block;
+    height: 5px;
+    left: 0;
+    position: absolute;
+    z-index: 1;
+}
+
+.meter {
+	height: 5px;  /* Can be anything */
+	position: relative;
+	background: #555;
 }

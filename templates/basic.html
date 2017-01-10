@@ -4,61 +4,62 @@
         <meta charset="utf-8">
     </head>
     <body>
-      <div>
-        <h1>{{name}}</h1>
-        <h3>{{function}}</h3>
-        <h4>{{k_contact}}</h4>
-        <div style="display: inline-block;">
-          {{phone}}<br />
-          {{email}}<br />
+        <div>
+            <h1>{{name}}</h1>
+            <h3>{{function}}</h3>
+            <h4>{{k_contact}}</h4>
+            <div style="display: inline-block;">
+                {{phone}}<br />
+                {{email}}<br />
+            </div>
+            <div style="float: right; text-align: right;">
+                {{address}}<br />
+                {{portfolio}}<br />
+            </div>
+            <h4>{{k_education}}</h4>
+            <hr />
+            {% for g in education %}
+            <div style="text-align: left;">
+                {{g[1]}}
+                <div>
+                    <ul>
+                        <b>{{g[0]}}</b>
+                        <li>
+                            {{g[2]}}
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            {% endfor %}
+            <h4>{{k_experience}}</h4>
+            <hr />
+            {% for j in experience %}
+            <div style="text-align: left;">
+                {{j[1]}}
+                <div>
+                    <ul>
+                        <b>{{j[0]}}</b>
+                        <li>
+                            {{j[2]}}
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            {% endfor %}
+            <h4>{{k_skills}} & {{k_languages}}</h4>
+            <hr />
+            <div class="grid skills">
+                <ul class="barres">
+                    {% for x,y in skills %}
+                         <li> {{x}} <span style="width: {{y*10*2}}%;"></span> </li>
+                    {% endfor %}
+                <ul>
+            </div>
+            <div style="float: right; text-align: left;">
+                {% for x, y in languages %}
+                <b>{{x}}:</b> {{y}}<br />
+                {% endfor %}
+            </div>
         </div>
-        <div style="float: right; text-align: right;">
-          {{address}}<br />
-          {{portfolio}}<br />
-        </div>
-        <h4>{{k_education}}</h4>
-        <hr />
-        {% for g in education %}
-
-        <div style="text-align: left;">
-          {{g[1]}}
-          <div>
-            <ul>
-              <b>{{g[0]}}</b>
-              <li>
-                {{g[2]}}
-              </li>
-            </ul>
-          </div>
-       </div>
-        {% endfor %}
-        <h4>{{k_experience}}</h4>
-        <hr />
-        {% for j in experience %}
-        <div style="text-align: left;">
-          {{j[1]}}
-          <div>
-            <ul>
-              <b>{{j[0]}}</b>
-              <li>
-                {{j[2]}}
-              </li>
-            </ul>
-          </div>
-        </div>
-        {% endfor %}
-        <h4>{{k_skills}} & {{k_languages}}</h4>
-        <hr />
-        <div style="display: inline-block;">
-          {% for x,y in skills %}
-          <b>{{x}}</b>: {{y}}<br />
-          {% endfor %}
-        </div>
-        <div style="float: right; text-align: left;">
-          {% for x, y in languages %}
-          <b>{{x}}:</b> {{y}}<br />
-          {% endfor %}
-        </div>
-      </div>
     </body>
 </html>

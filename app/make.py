@@ -1,6 +1,11 @@
 from weasyprint import HTML
 from app.mount_template import select_template
-from app.auxiliar import read_json, templates, mount_i18n
+from app.languages import read_json, mount_i18n
+
+templates = {'basic': 'A very basic resume',
+             'red': 'A red template - by:magnvmOpvs',
+             'simple': 'A simple template - by:magnvmOpvs',
+             'elegant': ' Based on One Page Resume'}
 
 
 def create(lang, template, json_file, output):

@@ -1,0 +1,78 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+
+<head>
+     <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+</head>
+
+<body>
+
+    <div id="page-wrap">
+
+        <div id="contact-info" class="vcard">
+
+            <!-- Microformats! -->
+
+            <h1 class="fn">{{name}}</h1>
+
+            <p>
+                {{k_phone}}: <span class="tel">{{phone}}</span><br />
+                {{k_email}}: <a class="email" href="mailto:greatoldone@lovecraft.com">{{email}}</a>
+            </p>
+        </div>
+
+        <div id="objective">
+            <p>{{function}}</p>
+        </div>
+
+        <div class="clear"></div>
+
+        <dl>
+            <dd class="clear"></dd>
+
+            <dt>{{k_education}}</dt>
+            {% for g in education %}
+            <dd>
+                <h2>{{g[0]}}</h2>
+                <p><strong>{{g[1]}}</strong> <br />
+                   {{g[2]}} </p>
+            </dd>
+            {% endfor %}
+            <dd class="clear"></dd>
+
+            <dt>{{k_experience}}</dt>
+            {% for j in experience %}
+                <dd>
+                    <h2>{{j[0]}}&emsp;&emsp;<span>{{j[1]}}</span></h2>
+                    <ul>
+                        <li>{{j[2]}}</li>
+                    </ul>
+                </dd>
+            {% endfor %}
+            <dd class="clear"></dd>
+
+            <dt>{{k_languages}}</dt>
+                {% for x, y in languages %}
+                    <dd>
+                        <h2>{{x}}&emsp;&emsp;<span>{{y}}</span></h2>
+                    </dd>
+                {% endfor %}
+            <dd class="clear"></dd>
+
+            <dt>{{k_skills}}</dt>
+                {% for x, y in skills%}
+                    <dd>
+                        <h2>{{x}}&emsp;&emsp;<span>{{y}}</span></h2>
+                    </dd>
+                {% endfor %}
+        </dl>
+
+        <div class="clear"></div>
+
+    </div>
+
+</body>
+
+</html>

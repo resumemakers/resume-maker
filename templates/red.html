@@ -1,158 +1,138 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title></title>
-
-    <!-- Bootstrap-->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Slabo+27px">
-
-  </head>
-<body>
-    <div class="container">
-
-      <div class="nameHeader">
-
-        <p class="slabo name">
-          {{name}}
-        </p>
-          <i class="fa fa-circle" aria-hidden="true"></i>
-          <p class="slabo func">
-            {{function}}
-          </p>
-          <i class="fa fa-circle" aria-hidden="true"></i>
-
-      </div>
-
-
-        <div class="addr">
-          <h3 class="slabo" style="text-align: left;">
-            {{k_address}}
-          </h3>
-            <p class="slabo" style="text-align: left;">
-              {{address}}
-            </p>
-            <h3 class="slabo" style="text-align: left;">
-              {{k_contact}}
-            </h3>
-            <p class="slabo" style="text-align: left;">
-              <b>
-                {{k_phone}}:
-              </b>
-              {{phone}}
-            </p>
-            <p class="slabo" style="text-align: left;">
-              <b>
-                {{k_email}}:
-              </b>
-              {{email}}
-            </p>
-            <p class="slabo" style="text-align: left;">
-              <b>
-                {{k_portfolio}}:
-              </b>
-              {{portfolio}}
-            </p>
-        </div>
-
-        <div class="info">
-
-          <h3 class="slabo verticalLine horizontalLine">
-            {{k_education}}
-          </h3>
-
-          {% for g in education %}
-
-          <i class="fa fa-caret-right"></i>
-          <h4 class="slabo" style="display: inline;">
-            {{g[0]}}</br>
-          </h4>
-
-          <p class="slabo" style="font-size: 15px; display: inline;">
-            {{g[1]}}</br>
-          </p>
-          <p class="slabo" style="font-size: 15px; display: inline;">
-            {{g[2]}}</br>
-          </p>
-          <br>
-          {% endfor %}
-
-
-          <h3 class="slabo verticalLine horizontalLine">{{k_experience}}</h3>
-          {% for j in experience %}
-          <i class="fa fa-caret-right"></i>
-          <h4 class="slabo" style="display: inline;">
-            {{j[0]}}<br>
-          </h4>
-          <p class="slabo" style="font-size: 15px; display: inline;">
-            {{j[1]}}<br>
-          </p>
-          <p class="slabo" style="display: inline; padding-left: 20px;">
-            {{j[2]}}<br>
-          </p>
-          <br>
-          {% endfor %}
-
-          <table style="float: left;">
-            <tr>
-              <td colspan="4">
-                <h3 class="slabo verticalLine horizontalLine" style="width: 100%;">
-                  {{k_skills}}
-                </h3>
-              </td>
-            </tr>
-
-            {% for x, y in skills %}
-            <tr>
-              <td colspan="2">
-                <h4 class="slabo" style="padding: 0px; margin: 0px; text-align: left;">
-                  <i class="fa fa-caret-right" style="text-align: left;"></i>
-                  {{x}}:
-                </h4>
-              </td>
-
-              <td colspan="2">
-                {% for b in range(0, y) %}
-                <i class="fa fa-circle" style="display: inline-block"></i>
-                {% endfor %}
-                {% for b in range(y, 5) %}
-                <i class="fa fa-circle" style="display: inline-block; color: #c4c4c4;"></i>
-                {% endfor %}
-              </td>
-           {% endfor %}
-           </tr>
-          </table>
-
-          <table style="display: inline-block; padding-left: 80px;">
-            <tr>
-              <td colspan="4">
-                <h3 class="slabo verticalLine horizontalLine" style="width: 100%;">
-                  {{k_languages}}
-                </h3>
-              </td>
-            </tr>
-            {% for x, y in languages %}
-            <tr>
-              <td colspan="2">
-                <h4 class="slabo" style="padding: 0px; margin: 0px; text-align: left;">
-                  <i class="fa fa-caret-right" style="text-align: left;"></i>
-                  {{x}}:
-                </h4>
-              </td>
-              <td colspan="2">
-                <p class="slabo" style="display: inline; padding: 0px; margin-top: 10px;">
-                  {{y}}
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title></title>
+        <!-- Bootstrap-->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Slabo+27px">
+    </head>
+    <body>
+        <div class="container">
+            <div class="nameHeader">
+                <p class="slabo name">
+                    {{name}}
                 </p>
-              </td>
-              {% endfor %}
-            </tr>
-          </table>
-
-      </div>
-
-    </div>
-  </body>
+                <i class="fa fa-circle" aria-hidden="true"></i>
+                <p class="slabo func">
+                    {{function}}
+                </p>
+                <i class="fa fa-circle" aria-hidden="true"></i>
+            </div>
+            <div class="addr">
+                <h3 class="slabo" style="text-align: left;">
+                    {{k_address}}
+                </h3>
+                <p class="slabo" style="text-align: left;">
+                    {{address}}
+                </p>
+                <h3 class="slabo" style="text-align: left;">
+                    {{k_contact}}
+                </h3>
+                <p class="slabo" style="text-align: left;">
+                    <b>
+                    {{k_phone}}:
+                    </b>
+                    {{phone}}
+                </p>
+                <p class="slabo" style="text-align: left;">
+                    <b>
+                    {{k_email}}:
+                    </b>
+                    {{email}}
+                </p>
+                <p class="slabo" style="text-align: left;">
+                    <b>
+                    {{k_portfolio}}:
+                    </b>
+                    {{portfolio}}
+                </p>
+            </div>
+            <div class="info">
+                <h3 class="slabo verticalLine horizontalLine">
+                    {{k_education}}
+                </h3>
+                {% for g in education %}
+                <i class="fa fa-caret-right"></i>
+                <h4 class="slabo" style="display: inline;">
+                    {{g[0]}}</br>
+                </h4>
+                <p class="slabo" style="font-size: 15px; display: inline;">
+                    {{g[1]}}</br>
+                </p>
+                <p class="slabo" style="font-size: 15px; display: inline;">
+                    {{g[2]}}</br>
+                </p>
+                <br>
+                {% endfor %}
+                <h3 class="slabo verticalLine horizontalLine">{{k_experience}}</h3>
+                {% for j in experience %}
+                <i class="fa fa-caret-right"></i>
+                <h4 class="slabo" style="display: inline;">
+                    {{j[0]}}<br>
+                </h4>
+                <p class="slabo" style="font-size: 15px; display: inline;">
+                    {{j[1]}}<br>
+                </p>
+                <p class="slabo" style="display: inline; padding-left: 20px;">
+                    {{j[2]}}<br>
+                </p>
+                <br>
+                {% endfor %}
+                <table style="float: left;">
+                    <tr>
+                        <td colspan="4">
+                            <h3 class="slabo verticalLine horizontalLine" style="width: 100%;">
+                                {{k_skills}}
+                            </h3>
+                        </td>
+                    </tr>
+                    {% for x, y in skills %}
+                    <tr>
+                        <td colspan="2">
+                            <h4 class="slabo" style="padding: 0px; margin: 0px; text-align: left;">
+                                <i class="fa fa-caret-right" style="text-align: left;"></i>
+                                {{x}}:
+                            </h4>
+                        </td>
+                        <td colspan="2">
+                            {% for b in range(0, y) %}
+                            <i class="fa fa-circle" style="display: inline-block"></i>
+                            {% endfor %}
+                            {% for b in range(y, 5) %}
+                            <i class="fa fa-circle" style="display: inline-block; color: #c4c4c4;"></i>
+                            {% endfor %}
+                        </td>
+                        {% endfor %}
+                    </tr>
+                </table>
+                <table style="display: inline-block; padding-left: 80px;">
+                    <tr>
+                        <td colspan="4">
+                            <h3 class="slabo verticalLine horizontalLine" style="width: 100%;">
+                                {{k_languages}}
+                            </h3>
+                        </td>
+                    </tr>
+                    {% for x, y in languages %}
+                    <tr>
+                        <td colspan="2">
+                            <h4 class="slabo" style="padding: 0px; margin: 0px; text-align: left;">
+                                <i class="fa fa-caret-right" style="text-align: left;"></i>
+                                {{x}}:
+                            </h4>
+                        </td>
+                        <td colspan="2">
+                            <p class="slabo" style="display: inline; padding: 0px; margin-top: 10px;">
+                                {{y}}
+                            </p>
+                        </td>
+                        {% endfor %}
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </body>
 </html>

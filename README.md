@@ -34,3 +34,5 @@ es = spanish
 [red](examples/red.pdf) - A red resume - by:magnvmOpvs
 
 [simple](examples/simple.pdf) - A simple template - by:magnvmOpvs
+
+[elegant](examples/elegant.pdf) - Based on a [one page curriculum](https://css-tricks.com/one-page-resume-site/)
