@@ -1,23 +1,23 @@
 from weasyprint import HTML
 from app.mount_template import select_template
-from app.auxiliar import read_json, templates, mount_i18n
+from app.auxiliar import read_json, mount_i18n
 
 
 def create(lang, template, json_file, output):
     """
-    Função que cria o pdf baseado no html
+    Função que cria o pdf baseado no html.
 
     :params:
-        - lang: Linguagem escolhida
-        - template: Template escolhido
-        - json_file: Arquivo a ser lido para gerar o cv
-        - output: arquivo de saida para o pdf
+        lang: Linguagem escolhida
+        template: Template escolhido
+        json_file: Arquivo a ser lido para gerar o cv
+        output: arquivo de saida para o pdf
 
     :vars:
-        - css: path do stylesheet
-        - pdf: path do pdf de saida
-        - template_vars: dict para o jinja
-        - build: HTML page
+        css: path do stylesheet
+        pdf: path do pdf de saida
+        template_vars: dict para o jinja
+        build: HTML page
 
     :returns: cv em pdf
     """

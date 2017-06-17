@@ -5,14 +5,13 @@ import click
 
 @click.group()
 def main():
-    """
-    Resume maker
-    """
+    """Resume maker."""
     pass
 
 
 @main.command(help='List templates')
 def list():
+    """Print list of templates."""
     print("Templates: \n")
     for template in templates:
         print("\t{} - {}".format(template,
@@ -25,7 +24,9 @@ def list():
 @click.argument('json_file', default='examples/info.json')
 @click.argument('output', default='resume')
 def make(lang, template, json_file, output):
+    """Call all functions to mount resume."""
     create(lang, template, json_file, output)
+
 
 if __name__ == '__main__':
     main()

@@ -4,10 +4,10 @@ from os.path import abspath
 
 def select_template(template):
     """
-    Função que seleciona o tamplate HTML que vai ser usado
+    Função que seleciona o tamplate HTML que vai ser usado.
 
     :args:
-        - template: template escolhido para o resume
+        template: template escolhido para o resume
 
     :return: o template para ser montado em pdf
     """
