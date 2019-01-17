@@ -10,6 +10,7 @@ Scenario: en basic
         "phone": "+55 287298121",
         "email": "George@martian.com",
         "address": "73 N. Oak Drive - Dyersburg, TN 38024",
+        "portfolio": "github.com/g_martian",
         "education": [
             ["PhD in the streets - Harvard",
              "2001"],
@@ -55,6 +56,7 @@ Scenario: pt basic
         "phone": "+55 287298121",
         "email": "George@martian.com",
         "address": "73 N. Oak Drive - Dyersburg, TN 38024",
+        "portfolio": "github.com/g_martian",
         "education": [
             ["PhD in the streets - Harvard",
              "2001"],
@@ -100,6 +102,7 @@ Scenario: es basic
         "phone": "+55 287298121",
         "email": "George@martian.com",
         "address": "73 N. Oak Drive - Dyersburg, TN 38024",
+        "portfolio": "github.com/g_martian",
         "education": [
             ["PhD in the streets - Harvard",
              "2001"],
@@ -144,6 +147,7 @@ Scenario: en red
         "profession": "Youtube senior analyst",
         "phone": "+55 287298121",
         "email": "George@martian.com",
+        "portfolio": "github.com/g_martian",
         "address": "73 N. Oak Drive - Dyersburg, TN 38024",
         "education": [
             ["PhD in the streets - Harvard",
@@ -189,6 +193,7 @@ Scenario: pt red
         "profession": "Youtube senior analyst",
         "phone": "+55 287298121",
         "email": "George@martian.com",
+        "portfolio": "github.com/g_martian",
         "address": "73 N. Oak Drive - Dyersburg, TN 38024",
         "education": [
             ["PhD in the streets - Harvard",
@@ -233,6 +238,7 @@ Scenario: es red
         "name": "George the Martian",
         "profession": "Youtube senior analyst",
         "phone": "+55 287298121",
+        "portfolio": "github.com/g_martian",
         "email": "George@martian.com",
         "address": "73 N. Oak Drive - Dyersburg, TN 38024",
         "education": [
@@ -278,6 +284,7 @@ Scenario: es simple
         "name": "George the Martian",
         "profession": "Youtube senior analyst",
         "phone": "+55 287298121",
+        "portfolio": "github.com/g_martian",
         "email": "George@martian.com",
         "address": "73 N. Oak Drive - Dyersburg, TN 38024",
         "education": [
@@ -324,6 +331,7 @@ Scenario: pt simple
         "profession": "Youtube senior analyst",
         "phone": "+55 287298121",
         "email": "George@martian.com",
+        "portfolio": "github.com/g_martian",
         "address": "73 N. Oak Drive - Dyersburg, TN 38024",
         "education": [
             ["PhD in the streets - Harvard",
@@ -368,6 +376,7 @@ Scenario: en simple
         "name": "George the Martian",
         "profession": "Youtube senior analyst",
         "phone": "+55 287298121",
+        "portfolio": "github.com/g_martian",
         "email": "George@martian.com",
         "address": "73 N. Oak Drive - Dyersburg, TN 38024",
         "education": [
