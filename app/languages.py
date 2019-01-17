@@ -61,7 +61,7 @@ templates = {
 }
 
 
-def mount_i18n(lang: str) -> dict:
+def mount_i18n(lang: str, *, keys: dict = keys, langs: dict = langs) -> dict:
     """
     Monta as chaves no jinja para o idioma escolhido.
 
