@@ -1,6 +1,7 @@
 from weasyprint import HTML
 from app.mount_template import select_template
-from app.auxiliar import read_json, mount_i18n
+from app.languages import mount_i18n
+from app.dict_tools import read_json
 
 
 def create(lang, template, json_file, output):
