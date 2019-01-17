@@ -2,3 +2,7 @@ __pycache__/
 Pipfile.lock
 tmp/
 resume.pdf
+htmlcov/
+*.egg-*
+.tox/
+.coverage
