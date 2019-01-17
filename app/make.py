@@ -1,7 +1,7 @@
 from weasyprint import HTML
 from app.mount_template import select_template
 from app.languages import mount_i18n
-from app.dict_tools import read_json, check_json_keys  # , check_json_types
+from app.dict_tools import read_json, check_json_keys, check_json_types
 
 
 def create(lang, template, json_file, output):
@@ -32,14 +32,10 @@ def create(lang, template, json_file, output):
     if not checked_field[0]:
         raise Exception(f'Json no has keys: {checked_field[1]}')
 
-    # TODO: not implemented correct types yet
+    checked_types = check_json_types(template_vars)
 
-    # checked_types = check_json_types(template_vars)
-    #
-    # if not checked_types[0]:
-    #     raise Exception(
-    #     f'Json no has wrong types on keys: {checked_types[1]}'
-    # )
+    if not checked_types[0]:
+        raise Exception(f'Json no has wrong types on keys: {checked_types[1]}')
 
     template_vars.update(mount_i18n(lang))
 
