@@ -6,7 +6,7 @@ Scenario: en basic
     """
     {
         "name": "George the Martian",
-        "function": "Youtube senior analyst",
+        "profession": "Youtube senior analyst",
         "phone": "+55 287298121",
         "email": "George@martian.com",
         "address": "73 N. Oak Drive - Dyersburg, TN 38024",
@@ -51,7 +51,7 @@ Scenario: pt basic
     """
     {
         "name": "George the Martian",
-        "function": "Youtube senior analyst",
+        "profession": "Youtube senior analyst",
         "phone": "+55 287298121",
         "email": "George@martian.com",
         "address": "73 N. Oak Drive - Dyersburg, TN 38024",
@@ -96,7 +96,7 @@ Scenario: es basic
     """
     {
         "name": "George the Martian",
-        "function": "Youtube senior analyst",
+        "profession": "Youtube senior analyst",
         "phone": "+55 287298121",
         "email": "George@martian.com",
         "address": "73 N. Oak Drive - Dyersburg, TN 38024",
@@ -141,7 +141,7 @@ Scenario: en red
     """
     {
         "name": "George the Martian",
-        "function": "Youtube senior analyst",
+        "profession": "Youtube senior analyst",
         "phone": "+55 287298121",
         "email": "George@martian.com",
         "address": "73 N. Oak Drive - Dyersburg, TN 38024",
@@ -186,7 +186,7 @@ Scenario: pt red
     """
     {
         "name": "George the Martian",
-        "function": "Youtube senior analyst",
+        "profession": "Youtube senior analyst",
         "phone": "+55 287298121",
         "email": "George@martian.com",
         "address": "73 N. Oak Drive - Dyersburg, TN 38024",
@@ -231,7 +231,7 @@ Scenario: es red
     """
     {
         "name": "George the Martian",
-        "function": "Youtube senior analyst",
+        "profession": "Youtube senior analyst",
         "phone": "+55 287298121",
         "email": "George@martian.com",
         "address": "73 N. Oak Drive - Dyersburg, TN 38024",
@@ -276,7 +276,7 @@ Scenario: es simple
     """
     {
         "name": "George the Martian",
-        "function": "Youtube senior analyst",
+        "profession": "Youtube senior analyst",
         "phone": "+55 287298121",
         "email": "George@martian.com",
         "address": "73 N. Oak Drive - Dyersburg, TN 38024",
@@ -321,7 +321,7 @@ Scenario: pt simple
     """
     {
         "name": "George the Martian",
-        "function": "Youtube senior analyst",
+        "profession": "Youtube senior analyst",
         "phone": "+55 287298121",
         "email": "George@martian.com",
         "address": "73 N. Oak Drive - Dyersburg, TN 38024",
@@ -366,7 +366,7 @@ Scenario: en simple
     """
     {
         "name": "George the Martian",
-        "function": "Youtube senior analyst",
+        "profession": "Youtube senior analyst",
         "phone": "+55 287298121",
         "email": "George@martian.com",
         "address": "73 N. Oak Drive - Dyersburg, TN 38024",

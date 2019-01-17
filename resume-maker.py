@@ -1,5 +1,5 @@
 from app.make import create
-from app.auxiliar import templates
+from app.languages import templates
 import click
 
 
