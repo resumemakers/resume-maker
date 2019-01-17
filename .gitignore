@@ -6,3 +6,4 @@ htmlcov/
 *.egg-*
 .tox/
 .coverage
+mutpy_report/
